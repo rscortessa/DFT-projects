@@ -43,9 +43,9 @@ xc.authors            PBE
 SpinPolarized         True
 
 %block kgrid_Monkhorst_Pack
-  7   0   0    0.0
-  0   7   0    0.0
-  0   0   1    0.0
+  7   0   0    0.5
+  0   7   0    0.5
+  0   0   1    0.5
 %endblock kgrid_Monkhorst_Pack
 
 
