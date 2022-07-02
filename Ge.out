@@ -5,7 +5,7 @@ PP flags      : -DMPI -DFC_HAVE_FLUSH -DFC_HAVE_ABORT
 PARALLEL version
 
 * Running in serial mode with MPI
->> Start of run:   2-JUL-2022  14:19:26
+>> Start of run:   2-JUL-2022  14:24:50
 
                            ***********************       
                            *  WELCOME TO SIESTA  *       
@@ -23,7 +23,7 @@ NumberOfSpecies  1
 %block ChemicalSpeciesLabel
     1     32   Ge
 %endblock ChemicalSpeciesLabel
-LatticeConstant  2.461 Ang
+LatticeConstant  4.0  Ang
 %block LatticeVectors
  0.500000  0.866000    0.000000
  0.500000 -0.86600000  0.000000
@@ -306,31 +306,31 @@ k-point displ. along   3 input, could be:     0.50    0.00
  Kpoints in:           28 . Kpoints trimmed:           28
 
 siesta: k-grid: Number of k-points =    28
-siesta: k-grid: Cutoff (effective) =     8.613 Ang
+siesta: k-grid: Cutoff (effective) =    14.000 Ang
 siesta: k-grid: Supercell and displacements
 siesta: k-grid:    7   0   0      0.500
 siesta: k-grid:    0   7   0      0.500
 siesta: k-grid:    0   0   1      0.500
-Naive supercell factors:    12   12    1
+Naive supercell factors:     8    8    1
 
-superc: Internal auxiliary supercell:    12 x    12 x     1  =     144
-superc: Number of atoms, orbitals, and projectors:    288   3744   4608
+superc: Internal auxiliary supercell:     8 x     8 x     1  =      64
+superc: Number of atoms, orbitals, and projectors:    128   1664   2048
 
                      ====================================
                         Single-point calculation
                      ====================================
 
-superc: Internal auxiliary supercell:    12 x    12 x     1  =     144
-superc: Number of atoms, orbitals, and projectors:    288   3744   4608
+superc: Internal auxiliary supercell:     8 x     8 x     1  =      64
+superc: Number of atoms, orbitals, and projectors:    128   1664   2048
 
 outcell: Unit cell vectors (Ang):
-        1.230500    2.131226    0.000000
-        1.230500   -2.131226    0.000000
-        0.000000    0.000000   49.220000
+        2.000000    3.464000    0.000000
+        2.000000   -3.464000    0.000000
+        0.000000    0.000000   80.000000
 
-outcell: Cell vector modules (Ang)   :    2.460946    2.460946   49.220000
+outcell: Cell vector modules (Ang)   :    3.999912    3.999912   80.000000
 outcell: Cell angles (23,13,12) (deg):     90.0000     90.0000    119.9985
-outcell: Cell volume (Ang**3)        :    258.1563
+outcell: Cell volume (Ang**3)        :   1108.4800
 siesta: WARNING: Atoms     1     2 too close: rij =    0.333333 Ang
 siesta: WARNING: Atoms     3     4 too close: rij =    0.333333 Ang
 siesta: WARNING: Atoms     5     6 too close: rij =    0.333333 Ang
@@ -395,276 +395,195 @@ siesta: WARNING: Atoms   121   122 too close: rij =    0.333333 Ang
 siesta: WARNING: Atoms   123   124 too close: rij =    0.333333 Ang
 siesta: WARNING: Atoms   125   126 too close: rij =    0.333333 Ang
 siesta: WARNING: Atoms   127   128 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   129   130 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   131   132 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   133   134 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   135   136 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   137   138 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   139   140 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   141   142 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   143   144 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   145   146 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   147   148 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   149   150 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   151   152 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   153   154 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   155   156 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   157   158 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   159   160 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   161   162 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   163   164 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   165   166 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   167   168 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   169   170 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   171   172 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   173   174 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   175   176 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   177   178 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   179   180 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   181   182 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   183   184 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   185   186 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   187   188 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   189   190 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   191   192 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   193   194 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   195   196 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   197   198 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   199   200 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   201   202 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   203   204 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   205   206 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   207   208 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   209   210 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   211   212 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   213   214 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   215   216 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   217   218 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   219   220 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   221   222 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   223   224 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   225   226 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   227   228 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   229   230 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   231   232 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   233   234 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   235   236 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   237   238 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   239   240 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   241   242 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   243   244 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   245   246 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   247   248 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   249   250 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   251   252 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   253   254 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   255   256 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   257   258 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   259   260 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   261   262 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   263   264 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   265   266 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   267   268 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   269   270 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   271   272 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   273   274 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   275   276 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   277   278 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   279   280 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   281   282 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   283   284 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   285   286 too close: rij =    0.333333 Ang
-siesta: WARNING: Atoms   287   288 too close: rij =    0.333333 Ang
 New_DM. Step:     1
 Initializing Density Matrix...
 
 initdm: Initial spin polarization (Qup-Qdown) =    4.000000
 New grid distribution:   1
-           1       1:    8    1:    8    1:  150
+           1       1:   12    1:   12    1:  243
 
-InitMesh: MESH =    16 x    16 x   300 =       76800
-InitMesh: (bp) =     8 x     8 x   150 =        9600
-InitMesh: Mesh cutoff (required, used) =   100.000   102.674 Ry
-ExtMesh (bp) on 0 =    80 x    80 x   210 =     1344000
-PhiOnMesh: Number of (b)points on node 0 =                 9600
-PhiOnMesh: nlist on node 0 =               325451
+InitMesh: MESH =    24 x    24 x   486 =      279936
+InitMesh: (bp) =    12 x    12 x   243 =       34992
+InitMesh: Mesh cutoff (required, used) =   100.000   101.999 Ry
+ExtMesh (bp) on 0 =    80 x    80 x   303 =     1939200
+PhiOnMesh: Number of (b)points on node 0 =                34992
+PhiOnMesh: nlist on node 0 =               277622
 
 stepf: Fermi-Dirac step function
 
 siesta: Program's energy decomposition (eV):
-siesta: Ebs     =      -170.611979
+siesta: Ebs     =      -119.473067
 siesta: Eions   =       283.718919
-siesta: Ena     =       501.643552
+siesta: Ena     =       518.375822
 siesta: Ekin    =        70.408964
-siesta: Enl     =        37.238189
+siesta: Enl     =        30.056397
 siesta: DEna    =         0.000000
 siesta: DUscf   =         0.000000
 siesta: DUext   =         0.000000
-siesta: Exc     =       -81.253705
+siesta: Exc     =       -68.224215
 siesta: eta*DQ  =         0.000000
 siesta: Emadel  =         0.000000
 siesta: Emeta   =         0.000000
 siesta: Emolmec =         0.000000
 siesta: Ekinion =         0.000000
-siesta: Eharris =       276.016961
-siesta: Etot    =       244.318082
-siesta: FreeEng =       244.316814
+siesta: Eharris =       278.440673
+siesta: Etot    =       266.898049
+siesta: FreeEng =       266.898049
 
    scf: iscf   Eharris(eV)      E_KS(eV)   FreeEng(eV)    dDmax  Ef(eV)
-   scf:    1      276.0170      244.3181      244.3168216.42155 -9.6132
-timer: Routine,Calls,Time,% =    IterSCF     1      15.084  78.96
-   scf:    2      274.2815      275.5377      275.5367 14.91784 -1.5381
-   scf:    3      274.6156      275.7453      275.7449  7.87206 -2.6201
-   scf:    4      274.7364      275.2911      275.2911 17.09994 -3.4706
-   scf:    5      274.7330      275.3815      275.3814 17.77160 -3.3651
-   scf:    6      274.7305      274.9182      274.9182 13.95549 -3.8283
-   scf:    7      274.7298      274.5847      274.5847  6.11774 -3.6828
-   scf:    8      274.7304      274.4897      274.4897  1.23215 -3.4773
-   scf:    9      274.7305      274.7300      274.7300  0.39305 -3.4793
-   scf:   10      274.7305      274.7279      274.7279  0.32487 -3.4883
-   scf:   11      274.7305      274.7301      274.7301  0.01161 -3.5160
-   scf:   12      274.7305      274.7302      274.7302  0.00848 -3.5162
-   scf:   13      274.7305      274.7305      274.7305  0.00104 -3.5165
-   scf:   14      274.7305      274.7305      274.7305  0.00026 -3.5163
-   scf:   15      274.7305      274.7305      274.7305  0.00019 -3.5163
-   scf:   16      274.7305      274.7305      274.7305  0.00014 -3.5163
-   scf:   17      274.7305      274.7305      274.7305  0.00001 -3.5163
-   scf:   18      274.7305      274.7305      274.7305  0.00001 -3.5163
+   scf:    1      278.4407      266.8980      266.8980  1.90497 -6.8923
+timer: Routine,Calls,Time,% =    IterSCF     1       6.640  78.90
+   scf:    2      277.0536      277.4491      277.4491  0.79416 -1.8702
+   scf:    3      277.2693      275.1212      275.1212  0.24063 -3.2312
+   scf:    4      277.1548      277.0260      277.0260  0.07246 -2.7175
+   scf:    5      277.1555      277.2169      277.2169  0.03234 -2.6384
+   scf:    6      277.1554      277.1415      277.1415  0.00561 -2.6433
+   scf:    7      277.1554      277.1598      277.1598  0.00183 -2.6404
+   scf:    8      277.1554      277.1615      277.1615  0.00142 -2.6401
+   scf:    9      277.1554      277.1603      277.1603  0.00052 -2.6396
+   scf:   10      277.1554      277.1574      277.1574  0.00024 -2.6400
+   scf:   11      277.1554      277.1559      277.1559  0.00017 -2.6402
+   scf:   12      277.1554      277.1557      277.1557  0.00009 -2.6404
+   scf:   13      277.1554      277.1556      277.1556  0.00008 -2.6404
+   scf:   14      277.1554      277.1555      277.1555  0.00004 -2.6404
+   scf:   15      277.1554      277.1553      277.1553  0.00002 -2.6404
+   scf:   16      277.1554      277.1553      277.1553  0.00001 -2.6404
+   scf:   17      277.1554      277.1554      277.1554  0.00000 -2.6404
 
 SCF Convergence by dMax criterion
-max |DM_out - DM_in|:     0.00000978
-SCF cycle converged after   18 iterations
+max |DM_out - DM_in|:     0.00000458
+SCF cycle converged after   17 iterations
 
 Using DM_out to compute the final energy and forces
 
-siesta: E_KS(eV) =              274.7305
+siesta: E_KS(eV) =              277.1554
 
-siesta: E_KS - E_eggbox =       274.7305
+siesta: E_KS - E_eggbox =       277.1554
 
 siesta: Atomic forces (eV/Ang):
 ----------------------------------------
-   Tot   -0.108614    0.000000    0.000000
+   Tot    0.000001    0.000000   -0.000000
 ----------------------------------------
-   Max 1929.672342
-   Res 1114.065492    sqrt( Sum f_i^2 / 3N )
+   Max 2025.171290
+   Res 1169.233189    sqrt( Sum f_i^2 / 3N )
 ----------------------------------------
-   Max 1929.672342    constrained
+   Max 2025.171290    constrained
 
-Stress-tensor-Voigt (kbar):    -3168.64      169.77       -0.00        0.00        0.00       -0.00
-(Free)E + p*V (eV/cell)      435.7966
-Target enthalpy (eV/cell)      274.7305
+Stress-tensor-Voigt (kbar):     -976.78       -0.57       -0.00       -0.00       -0.00       -0.00
+(Free)E + p*V (eV/cell)      502.5490
+Target enthalpy (eV/cell)      277.1554
 Computing bands...
 
 siesta: Program's energy decomposition (eV):
-siesta: Ebs     =      -121.546589
+siesta: Ebs     =       -92.980550
 siesta: Eions   =       283.718919
-siesta: Ena     =       501.643552
-siesta: Ekin    =       130.360244
-siesta: Enl     =        18.941762
-siesta: DEna    =       -11.532811
-siesta: DUscf   =         1.647255
+siesta: Ena     =       518.375822
+siesta: Ekin    =       103.907731
+siesta: Enl     =        20.660074
+siesta: DEna    =       -11.423531
+siesta: DUscf   =         1.312622
 siesta: DUext   =         0.000000
-siesta: Exc     =       -82.610539
+siesta: Exc     =       -71.958372
 siesta: eta*DQ  =         0.000000
 siesta: Emadel  =         0.000000
 siesta: Emeta   =         0.000000
 siesta: Emolmec =         0.000000
 siesta: Ekinion =         0.000000
-siesta: Eharris =       274.730545
-siesta: Etot    =       274.730545
-siesta: FreeEng =       274.730544
+siesta: Eharris =       277.155426
+siesta: Etot    =       277.155426
+siesta: FreeEng =       277.155426
 
 siesta: Final energy (eV):
-siesta:  Band Struct. =    -121.546589
-siesta:       Kinetic =     130.360244
-siesta:       Hartree =    4079.537600
+siesta:  Band Struct. =     -92.980550
+siesta:       Kinetic =     103.907731
+siesta:       Hartree =    2647.722019
 siesta:    Ext. field =       0.000000
-siesta:   Exch.-corr. =     -82.610539
-siesta:  Ion-electron =   -8303.413348
-siesta:       Ion-ion =    4450.856588
+siesta:   Exch.-corr. =     -71.958372
+siesta:  Ion-electron =   -5399.072713
+siesta:       Ion-ion =    2996.556761
 siesta:       Ekinion =       0.000000
-siesta:         Total =     274.730545
+siesta:         Total =     277.155426
 
 siesta: Atomic forces (eV/Ang):
-siesta:      1-1929.672342    0.000000   -0.000000
-siesta:      2 1929.563728   -0.000000    0.000000
+siesta:      1-2025.171289   -0.000000    0.000000
+siesta:      2 2025.171290    0.000000   -0.000000
 siesta: ----------------------------------------
-siesta:    Tot   -0.108614    0.000000    0.000000
+siesta:    Tot    0.000001    0.000000   -0.000000
 
 siesta: Stress tensor (static) (eV/Ang**3):
-siesta:    -1.977688   -0.000000   -0.000000
-siesta:     0.000000    0.105963    0.000000
-siesta:    -0.000000    0.000000   -0.000002
+siesta:    -0.609650   -0.000000   -0.000000
+siesta:    -0.000000   -0.000355   -0.000000
+siesta:    -0.000000   -0.000000   -0.000002
 
-siesta: Cell volume =        258.156300 Ang**3
+siesta: Cell volume =       1108.480000 Ang**3
 
 siesta: Pressure (static):
 siesta:                Solid            Molecule  Units
-siesta:           0.00679517         -0.00225016  Ry/Bohr**3
-siesta:           0.62390906         -0.20660249  eV/Ang**3
-siesta:         999.62332140       -331.01726240  kBar
-(Free)E+ p_basis*V_orbitals  =         277.760236
-(Free)Eharris+ p_basis*V_orbitals  =         277.760236
+siesta:           0.00221459          0.00000368  Ry/Bohr**3
+siesta:           0.20333575          0.00033812  eV/Ang**3
+siesta:         325.78330662          0.54173995  kBar
+(Free)E+ p_basis*V_orbitals  =         280.185118
+(Free)Eharris+ p_basis*V_orbitals  =         280.185118
 
 siesta: Total spin polarization (Qup-Qdown) =    0.000000
 
-siesta: Electric dipole (a.u.)  =    0.000000    0.000000   -0.000000
-siesta: Electric dipole (Debye) =    0.000000    0.000000   -0.000000
+siesta: Electric dipole (a.u.)  =   -0.000000   -0.000000    0.000000
+siesta: Electric dipole (Debye) =   -0.000000   -0.000000    0.000000
 
-timer: Elapsed wall time (sec) =      62.730
+timer: Elapsed wall time (sec) =      31.144
 timer: CPU execution times (sec):
 
 Routine            Calls   Time/call    Tot.time        %
-siesta                 1     297.284     297.284   100.00
-Setup                  1       0.164       0.164     0.06
-bands                  3       4.475      13.424     4.52
+siesta                 1     125.572     125.572   100.00
+Setup                  1       0.160       0.160     0.13
+bands                  3       2.089       6.268     4.99
 writewave              1       0.000       0.000     0.00
 KSV_init               1       0.000       0.000     0.00
-IterGeom               1     283.684     283.684    95.43
-state_init             1       0.228       0.228     0.08
-hsparse                1       0.044       0.044     0.01
-overlap                1       0.168       0.168     0.06
-Setup_H0               1       3.628       3.628     1.22
+IterGeom               1     119.128     119.128    94.87
+state_init             1       0.188       0.188     0.15
+hsparse                1       0.008       0.008     0.01
+overlap                1       0.172       0.172     0.14
+Setup_H0               1       1.428       1.428     1.14
 naefs                  2       0.000       0.000     0.00
 MolMec                 2       0.000       0.000     0.00
-kinefsm                2       0.092       0.184     0.06
-nlefsm                 2       2.708       5.416     1.82
-DHSCF_Init             1       0.580       0.580     0.20
-DHSCF1                 1       0.056       0.056     0.02
+kinefsm                2       0.070       0.140     0.11
+nlefsm                 2       0.616       1.232     0.98
+DHSCF_Init             1       0.556       0.556     0.44
+DHSCF1                 1       0.056       0.056     0.04
 INITMESH               1       0.000       0.000     0.00
-DHSCF2                 1       0.524       0.524     0.18
-REMESH                 1       0.084       0.084     0.03
-REORD                 85       0.000       0.008     0.00
-PHION                  1       0.392       0.392     0.13
-COMM_BSC              80       0.000       0.008     0.00
-POISON                20       0.011       0.212     0.07
-fft                   40       0.005       0.184     0.06
-IterSCF               18      15.259     274.660    92.39
-setup_H               18       1.341      24.136     8.12
-DHSCF                 19       1.405      26.700     8.98
-DHSCF3                19       1.335      25.356     8.53
-rhoofd                19       0.727      13.808     4.64
-cellXC                19       0.036       0.684     0.23
-vmat                  19       0.558      10.600     3.57
-compute_dm            18      13.901     250.220    84.17
-diagon                18      13.898     250.156    84.15
-c-eigval            1220       0.071      87.140    29.31
-c-buildHS           1220       0.069      84.068    28.28
-cdiag               2228       0.004       8.557     2.88
-cdiag1              2228       0.001       1.300     0.44
-cdiag2              2228       0.001       1.300     0.44
-cdiag3              2228       0.002       5.532     1.86
-cdiag4              2228       0.000       0.160     0.05
-c-eigvec            1008       0.078      78.772    26.50
-c-buildD            1008       0.077      77.496    26.07
-MIXER                 17       0.008       0.128     0.04
-WriteDM               18       0.009       0.168     0.06
-PostSCF                1       5.152       5.152     1.73
-DHSCF4                 1       1.340       1.340     0.45
-dfscf                  1       1.300       1.300     0.44
-overfsm                1       0.016       0.016     0.01
-state_analysis         1       0.004       0.004     0.00
+DHSCF2                 1       0.500       0.500     0.40
+REMESH                 1       0.044       0.044     0.04
+REORD                 81       0.000       0.024     0.02
+PHION                  1       0.372       0.372     0.30
+COMM_BSC              76       0.000       0.024     0.02
+POISON                19       0.050       0.956     0.76
+fft                   38       0.022       0.820     0.65
+IterSCF               17       6.808     115.728    92.16
+setup_H               17       0.727      12.352     9.84
+DHSCF                 18       0.755      13.596    10.83
+DHSCF3                18       0.719      12.944    10.31
+rhoofd                18       0.314       5.652     4.50
+cellXC                18       0.100       1.808     1.44
+vmat                  18       0.236       4.244     3.38
+compute_dm            17       6.075     103.268    82.24
+diagon                17       6.073     103.236    82.21
+c-eigval            1164       0.028      32.800    26.12
+c-buildHS           1164       0.025      29.584    23.56
+cdiag               2116       0.004       8.292     6.60
+cdiag1              2116       0.001       1.268     1.01
+cdiag2              2116       0.001       1.324     1.05
+cdiag3              2116       0.003       5.368     4.27
+cdiag4              2116       0.000       0.116     0.09
+c-eigvec             952       0.031      29.496    23.49
+c-buildD             952       0.027      26.140    20.82
+MIXER                 16       0.003       0.044     0.04
+WriteDM               17       0.004       0.060     0.05
+PostSCF                1       1.780       1.780     1.42
+DHSCF4                 1       0.652       0.652     0.52
+dfscf                  1       0.616       0.616     0.49
+overfsm                1       0.008       0.008     0.01
+state_analysis         1       0.000       0.000     0.00
 siesta_move            1       0.000       0.000     0.00
 optical                1       0.000       0.000     0.00
   
->> End of run:   2-JUL-2022  14:20:29
+>> End of run:   2-JUL-2022  14:25:22
