@@ -13,7 +13,7 @@ NumberOfSpecies  1
     1     32   Ge
 %endblock ChemicalSpeciesLabel
 
-LatticeConstant  2.461 Ang
+LatticeConstant  4.0  Ang
 
 %block LatticeVectors
  0.500000  0.866000    0.000000
