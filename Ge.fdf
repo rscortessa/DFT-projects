@@ -1,0 +1,65 @@
+#################################################################
+#		General system descritprs
+#################################################################
+
+
+SystemName   Germanio
+SystemLabel  Ge
+
+NumberOfAtoms    2
+NumberOfSpecies  1
+
+%block ChemicalSpeciesLabel
+    1     32   Ge
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant  5.000 Ang
+
+%block LatticeVectors
+ 0.500000  0.866000    0.000000
+ 0.500000 -0.86600000  0.000000
+ 0.000000  0.000000    20.00000
+%endblock LatticeVectors
+
+AtomicCoordinatesFormat Ang
+
+%block AtomicCoordinatesAndAtomicSpecies
+0.333333    0.000000    0.000000       1
+0.666666    0.000000    0.000000       1  
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+BandLinesScale pi/a
+%block BandLines
+ 1    0.00000   0.000   0.0000   \Gamma
+ 35   1.00000   1.1547  0.0000   X
+ 35   3.33333   0.000   0.0000   K
+ 35   0.00000   0.000   0.0000   \Gamma
+%endblock BandLines
+
+xc.functional         GGA
+
+xc.authors            PBE
+
+SpinPolarized         True
+
+%block kgrid_Monkhorst_Pack
+  7   0   0    0.0
+  0   7   0    0.0
+  0   0   1    0.0
+%endblock kgrid_Monkhorst_Pack
+
+
+MaxSCFIterations    300           
+
+
+DM.MixingWeight       0.20
+
+DM.NumberPulay         4
+
+DM.Tolerance          1.d-5
+
+# Aquí va la base del germanio
+
+PAO.EnergyShift 0.02 eV
+
+
