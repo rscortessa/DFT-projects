@@ -1,0 +1,4 @@
+set xtics ("Gamma"  0.000000, "X"  0.507889, "K"  1.373503, "Gamma"  2.481807)
+plot "bands.dat" using 1:2:3 with lines lc variable
+# -- Use line below for single-color
+#plot "bands.dat" with lines
