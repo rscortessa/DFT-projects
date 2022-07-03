@@ -15,11 +15,9 @@ NumberOfSpecies  1
 
 LatticeConstant  4.0  Ang
 
-%block LatticeVectors				
-0.5    	0.2886751345	0.000000000		
-0.5    -0.2886751345	0.000000000		
-0.000000000	0.000000000    25.000000000		
-%endblock LatticeVectors
+%block LatticeParameters
+1.0    1.0	100.	90.	90.	120. 
+%endblock LatticeParameters
 
 AtomicCoordinatesFormat Ang
 
@@ -33,7 +31,6 @@ BandLinesScale pi/a
  1    0.00000     0.000         0.0000   \Gamma
  35   1.333333      0.000       0.0000   X
  35   0.6666666	  1.1547005     0.0000   K
- 35   0.00000	  1.1547005     0.0000   M
  35   0.00000     0.0000        0.0000   \Gamma
 %endblock BandLines
 
