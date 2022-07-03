@@ -28,11 +28,11 @@ AtomicCoordinatesFormat Ang
 
 BandLinesScale pi/a
 %block BandLines
- 1    0.00000     0.000         0.0000   $\Gamma$
- 35   1.333333      0.000       0.0000   X
+ 1    0.00000     0.000         0.0000   \Gamma
+ 35   1.333333    0.000         0.0000   X
  35   0.6666666	  1.1547005     0.0000   K
  35   0.00000	  1.1547005     0.0000   M
- 35   0.00000     0.0000        0.0000   $\Gamma$
+ 35   0.00000     0.0000        0.0000   \Gamma
 %endblock BandLines
 
 xc.functional         GGA
