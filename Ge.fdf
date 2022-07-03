@@ -30,8 +30,8 @@ BandLinesScale ReciprocalLatticeVectors
 %block BandLines
  1    0.00000     0.0000000     0.0000   \Gamma
  35   0.000000    0.5000000     0.00000  X
- 35   0.333333    0.3333333     0.0000   K
- 35   0.00000     0.0000        0.0000   \Gamma
+ 40   0.333333    0.3333333     0.0000   K
+ 50   0.00000     0.0000        0.0000   \Gamma
 %endblock BandLines
 
 xc.functional         GGA
