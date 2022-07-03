@@ -5,7 +5,7 @@ PP flags      : -DMPI -DFC_HAVE_FLUSH -DFC_HAVE_ABORT
 PARALLEL version
 
 * Running in serial mode with MPI
->> Start of run:   2-JUL-2022  19:25:09
+>> Start of run:   2-JUL-2022  19:34:27
 
                            ***********************       
                            *  WELCOME TO SIESTA  *       
@@ -34,11 +34,11 @@ AtomicCoordinatesFormat Ang
 %endblock AtomicCoordinatesAndAtomicSpecies
 BandLinesScale pi/a
 %block BandLines
- 1    0.00000     0.000         0.0000   $\Gamma$
- 35   1.333333      0.000       0.0000   X
+ 1    0.00000     0.000         0.0000   \Gamma
+ 35   1.333333    0.000         0.0000   X
  35   0.6666666	  1.1547005     0.0000   K
  35   0.00000	  1.1547005     0.0000   M
- 35   0.00000     0.0000        0.0000   $\Gamma$
+ 35   0.00000     0.0000        0.0000   \Gamma
 %endblock BandLines
 xc.functional         GGA
 xc.authors            PBE
@@ -367,7 +367,7 @@ siesta: FreeEng =      -215.403792
 
    scf: iscf   Eharris(eV)      E_KS(eV)   FreeEng(eV)    dDmax  Ef(eV)
    scf:    1     -208.6207     -215.3980     -215.4038  0.92164 -4.8563
-timer: Routine,Calls,Time,% =    IterSCF     1       6.832  76.08
+timer: Routine,Calls,Time,% =    IterSCF     1       6.904  76.30
    scf:    2     -210.5234     -210.1295     -210.1306  0.07812 -3.9514
    scf:    3     -210.4908     -210.4811     -210.4823  0.04813 -4.1263
    scf:    4     -210.5570     -210.4932     -210.4932  0.01490 -4.4344
@@ -461,60 +461,60 @@ siesta: Total spin polarization (Qup-Qdown) =    0.000000
 siesta: Electric dipole (a.u.)  =   -0.000000   -0.000000    0.000000
 siesta: Electric dipole (Debye) =   -0.000000   -0.000000    0.000000
 
-timer: Elapsed wall time (sec) =      31.425
+timer: Elapsed wall time (sec) =      31.669
 timer: CPU execution times (sec):
 
 Routine            Calls   Time/call    Tot.time        %
-siesta                 1     105.080     105.080   100.00
-Setup                  1       0.160       0.160     0.15
-bands                  3       2.520       7.560     7.19
+siesta                 1     105.300     105.300   100.00
+Setup                  1       0.164       0.164     0.16
+bands                  3       2.537       7.612     7.23
 writewave              1       0.000       0.000     0.00
 KSV_init               1       0.000       0.000     0.00
-IterGeom               1      97.336      97.336    92.63
-state_init             1       0.192       0.192     0.18
-hsparse                1       0.012       0.012     0.01
+IterGeom               1      97.504      97.504    92.60
+state_init             1       0.184       0.184     0.17
+hsparse                1       0.008       0.008     0.01
 overlap                1       0.172       0.172     0.16
 Setup_H0               1       1.796       1.796     1.71
-naefs                  2       0.000       0.000     0.00
+naefs                  2       0.002       0.004     0.00
 MolMec                 2       0.000       0.000     0.00
 kinefsm                2       0.072       0.144     0.14
-nlefsm                 2       0.662       1.324     1.26
+nlefsm                 2       0.660       1.320     1.25
 DHSCF_Init             1       0.880       0.880     0.84
 DHSCF1                 1       0.132       0.132     0.13
 INITMESH               1       0.000       0.000     0.00
 DHSCF2                 1       0.748       0.748     0.71
-REMESH                 1       0.044       0.044     0.04
-REORD                 65       0.003       0.176     0.17
-PHION                  1       0.292       0.292     0.28
+REMESH                 1       0.040       0.040     0.04
+REORD                 65       0.003       0.172     0.16
+PHION                  1       0.296       0.296     0.28
 COMM_BSC              60       0.003       0.164     0.16
-POISON                15       0.422       6.336     6.03
-fft                   30       0.190       5.700     5.42
-IterSCF               13       7.165      93.140    88.64
-setup_H               13       1.115      14.500    13.80
-DHSCF                 14       1.152      16.124    15.34
-DHSCF3                14       1.105      15.472    14.72
-rhoofd                14       0.298       4.176     3.97
-cellXC                14       0.099       1.388     1.32
-vmat                  14       0.187       2.624     2.50
-compute_dm            13       6.044      78.568    74.77
-diagon                13       6.042      78.540    74.74
-c-eigval            1010       0.026      26.600    25.31
-c-buildHS           1010       0.024      24.072    22.91
-cdiag               1738       0.004       6.516     6.20
-cdiag1              1738       0.001       0.956     0.91
-cdiag2              1738       0.001       1.016     0.97
-cdiag3              1738       0.002       4.280     4.07
-cdiag4              1738       0.000       0.104     0.10
-c-eigvec             728       0.031      22.836    21.73
-c-buildD             728       0.028      20.160    19.19
-MIXER                 12       0.002       0.020     0.02
-WriteDM               13       0.004       0.048     0.05
-PostSCF                1       2.204       2.204     2.10
-DHSCF4                 1       0.652       0.652     0.62
+POISON                15       0.424       6.364     6.04
+fft                   30       0.190       5.696     5.41
+IterSCF               13       7.178      93.320    88.62
+setup_H               13       1.126      14.636    13.90
+DHSCF                 14       1.160      16.240    15.42
+DHSCF3                14       1.114      15.592    14.81
+rhoofd                14       0.301       4.220     4.01
+cellXC                14       0.101       1.408     1.34
+vmat                  14       0.188       2.636     2.50
+compute_dm            13       6.047      78.612    74.66
+diagon                13       6.045      78.584    74.63
+c-eigval            1010       0.026      26.688    25.34
+c-buildHS           1010       0.024      24.152    22.94
+cdiag               1738       0.004       6.496     6.17
+cdiag1              1738       0.001       0.984     0.93
+cdiag2              1738       0.001       0.932     0.89
+cdiag3              1738       0.002       4.276     4.06
+cdiag4              1738       0.000       0.108     0.10
+c-eigvec             728       0.031      22.864    21.71
+c-buildD             728       0.028      20.116    19.10
+MIXER                 12       0.003       0.032     0.03
+WriteDM               13       0.003       0.040     0.04
+PostSCF                1       2.200       2.200     2.09
+DHSCF4                 1       0.648       0.648     0.62
 dfscf                  1       0.596       0.596     0.57
-overfsm                1       0.008       0.008     0.01
+overfsm                1       0.004       0.004     0.00
 state_analysis         1       0.000       0.000     0.00
 siesta_move            1       0.000       0.000     0.00
 optical                1       0.000       0.000     0.00
   
->> End of run:   2-JUL-2022  19:25:40
+>> End of run:   2-JUL-2022  19:34:59
